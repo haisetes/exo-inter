@@ -23,24 +23,36 @@
             <li class="main-header__nav_item"><a href="#">Speakers</a></li>
             <li class="main-header__nav_item"><a href="#">Team</a></li>
             <li class="main-header__nav_item"><a href="#">Contact</a></li>
-            <li class="main-header__nav_item"><a href="#">Schedule</a></li>
           </ul>
+          <div class="main-header__nav_schedule">
+            <p><a class="icon-schedule"  href="#"></a></p>
+            <p><a href="#">Schedule</a></p>
+          </div>
+          <p><a class="icon-loop"  href="#"></a></p>
         </nav>
       </div>
       <div class="deco-patern">
-        <img src="../dist/image/elts/pattern-stripes-left.png" alt="" />
-        <img src="../dist/image/elts/pattern-stripes-right.png" alt="" />
+        <div class="deco-patern__left">
+          <img src="../dist/image/elts/pattern-stripes-left.png" alt="" />
+        </div>
+        <div class="deco-patern__rigth">
+          <img src="../dist/image/elts/pattern-stripes-right.png" alt="" />
+        </div>
       </div>
     </header>
     <main>
       <!-- teaser -->
       <section class="teaser">
-        <img src="../dist/image/page-picture/presents.png" alt="" />
-        <h2>Speaker Edition 2025</h2>
-        <p>
-          Discover the speakers and the topics or suggest your own topic for our
-          next event
-        </p>
+        <div class="teaser__image">
+          <img src="../dist/image/page-picture/presents.png" alt="" />
+        </div>
+        <div class="teaser__info">
+          <h2 class="teaser__title">Speaker Edition 2025</h2>
+          <p class="teaser__texte">
+            Discover the speakers and the topics or suggest your own topic for our
+            next event
+          </p>
+        </div>
       </section>
       <!-- file d'arianne -->
       <nav class="main__nav">
@@ -66,17 +78,13 @@
           />
           <h3 class="speaker__name">Chris Coyier</h3>
           <h4 class="speaker__location">Milwaukee, WI</h4>
-          <h5 class="speaker__title">
-            The All-Powerful Front-End Developer
-          </h5>
+          <h5 class="speaker__title">The All-Powerful Front-End Developer</h5>
           <p class="speaker__description">
             Without servers, we'd have no way to share our creations with the
             world
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="09:30"></time>09:30 am
-            </p>
+            <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -100,9 +108,7 @@
             Internet
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="10:15"></time>10:15 am
-            </p>
+            <p class="speaker__hour"><time datetime="10:15"></time>10:15 am</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -126,9 +132,7 @@
             grid itself?
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="04:00"></time>04:00 pm
-            </p>
+            <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -151,9 +155,7 @@
             New approachable way to create Web applications
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="04:00"></time>04:00 pm
-            </p>
+            <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
             <p class="speaker__room">R2</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -179,9 +181,7 @@
             embedded teams
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="09:30"></time>09:30 am
-            </p>
+            <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
             <p class="speaker__room">R2</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -205,9 +205,7 @@
             we need to have a future
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="11:30"></time>11:30am
-            </p>
+            <p class="speaker__hour"><time datetime="11:30"></time>11:30am</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -233,9 +231,7 @@
             apps
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="11:30"></time>02:00pm
-            </p>
+            <p class="speaker__hour"><time datetime="11:30"></time>02:00pm</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -257,11 +253,8 @@
           <p class="speaker__description">
             Redefining the Technical Possibilities of CSS
           </p>
-          <footer>
-
-          </footer><p class="speaker__hour">
-            <time datetime="03:00"></time>03:00 pm
-          </p>
+          <footer></footer>
+          <p class="speaker__hour"><time datetime="03:00"></time>03:00 pm</p>
           <p class="speaker__room">R1</p>
           <button class="speaker__btn">About</button>
         </div>
@@ -284,9 +277,7 @@
             Is this absolutely necessary?
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="05:00"></time>05:00 pm
-            </p>
+            <p class="speaker__hour"><time datetime="05:00"></time>05:00 pm</p>
             <p class="speaker__room">R1</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -304,17 +295,13 @@
           />
           <h3 class="speaker__name">Paul Irish</h3>
           <h4 class="speaker__location">Palo Alto, CA</h4>
-          <h5 class="speaker__title">
-            Developer Tooling, lighthouse
-          </h5>
+          <h5 class="speaker__title">Developer Tooling, lighthouse</h5>
           <p class="speaker__description">
             Auditing, performance metrics, and best practices for Progressive
             Web Apps
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="10:30"></time>10:30 am
-            </p>
+            <p class="speaker__hour"><time datetime="10:30"></time>10:30 am</p>
             <p class="speaker__room">R2</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -338,9 +325,7 @@
             code
           </p>
           <footer>
-            <p class="speaker__hour">
-              <time datetime="11:30"></time>11:30 am
-            </p>
+            <p class="speaker__hour"><time datetime="11:30"></time>11:30 am</p>
             <p class="speaker__room">R2</p>
             <button class="speaker__btn">About</button>
           </footer>
@@ -363,11 +348,9 @@
             We can construct design systems in a more methodical way
           </p>
           <footer>
-            <p class="speaker__hour">
-            <time datetime="02:00"></time>02:00 pm
-          </p>
-          <p class="speaker__room">R2</p>
-          <button class="speaker__btn">About</button>
+            <p class="speaker__hour"><time datetime="02:00"></time>02:00 pm</p>
+            <p class="speaker__room">R2</p>
+            <button class="speaker__btn">About</button>
           </footer>
         </div>
       </div>
@@ -405,52 +388,83 @@
             <h2>The Las Vegas Convention Center</h2>
             <h3>3150 Paradise Rd, Las Vegas, NV 89109</h3>
             <p>
-              The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, 
-              encompasses approximately 3.2 million square feet with exhibit space of 2 million 
-              square feet and meeting space of nearly 250,000 square feet.
+              The Las Vegas Convention Center (LVCC), located adjacent to the
+              Las Vegas Strip, encompasses approximately 3.2 million square feet
+              with exhibit space of 2 million square feet and meeting space of
+              nearly 250,000 square feet.
             </p>
           </div>
           <figure class="footer-location__image">
-            <img src="../dist/image/page-picture/lasvegas_conventioncenter.png" 
-                 alt="Las Vegas Convention Center">
+            <img
+              src="../dist/image/page-picture/lasvegas_conventioncenter.png"
+              alt="Las Vegas Convention Center"
+            />
           </figure>
         </section>
-    
-        <!-- Sponsors Section -->
-     
-          <nav class="footer-sponsors">
-            <ul class="footer-sponsors__list">
-              <li><img src="../dist/image/logos_assets_codeconf/cisco.svg" alt="Cisco Logo"></li>
-              <li><img src="../dist/image/logos_assets_codeconf/amazon_s3.svg" alt="Amazon S3 Logo"></li>
-              <li><img src="../dist/image/logos_assets_codeconf/nick.svg" alt="Nick Logo"></li>
-              <li><img src="../dist/image/logos_assets_codeconf/meetup.svg" alt="Meetup Logo"></li>
-              <li><img src="../dist/image/logos_assets_codeconf/stripe.svg" alt="Stripe Logo"></li>
-              <li><img src="../dist/image/logos_assets_codeconf/mailchimp.svg" alt="Mailchimp Logo"></li>
-            </ul>
-          </nav>
-           <!-- infos Section -->
-          <section class="footer-info">
-            <div class="footer-info__media">
-              <h2 class="footer-info__title">Follow us</h2>
-              <div class="footer-info__social">
 
-              </div>
+        <!-- Sponsors Section -->
+
+        <nav class="footer-sponsors">
+          <ul class="footer-sponsors__list">
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/cisco.svg"
+                alt="Cisco Logo"
+              />
+            </li>
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/amazon_s3.svg"
+                alt="Amazon S3 Logo"
+              />
+            </li>
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/nick.svg"
+                alt="Nick Logo"
+              />
+            </li>
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/meetup.svg"
+                alt="Meetup Logo"
+              />
+            </li>
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/stripe.svg"
+                alt="Stripe Logo"
+              />
+            </li>
+            <li>
+              <img
+                src="../dist/image/logos_assets_codeconf/mailchimp.svg"
+                alt="Mailchimp Logo"
+              />
+            </li>
+          </ul>
+        </nav>
+        <!-- infos Section -->
+        <section class="footer-info">
+          <div class="footer-info__media">
+            <h2 class="footer-info__title">Follow us</h2>
+            <div class="footer-info__social">
               <p>twitter: @codeconf2023</p>
               <p>slack channel: #codeconf2023</p>
             </div>
-           <div class="footer-info__call">
+          </div>
+          <div class="footer-info__call">
             <p>Helpdesk Call-center</p>
             <p><a href="#">+1 702-892-0711</a></p>
             <p>(speaker's support)</p>
-           </div>
-           <div class="footer-info__call">
-            <p>organised by WebeesMeetups.com</p>
+          </div>
+          <div class="footer-info__copyright">
+            <p>organised by</p>
+            <p>WebeesMeetups.com</p>
             <p>copyright</p>
-           </div>
-          </section>
-
+          </div>
+        </section>
       </div>
     </footer>
-    
   </body>
 </html>

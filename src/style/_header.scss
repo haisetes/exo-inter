@@ -1,22 +1,55 @@
+//reset
+.main-header {
+  font-weight: 450;
+  color: #1d1d1d;
+}
+
 .main-header {
   display: flex;
-  border: 1px dashed grey;
+  
   align-items: center;
   justify-content: space-between;
   &__logo {
-
-    border: 1px dashed grey;
-    img {
+        img {
       width: 10rem;
     }
   }
+  &__nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
   &__nav_list {
-    border: 1px dashed grey;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     margin: 0;
+    :last-child {
+      border-right-style: none;
+    }
+  }
+  &__nav_item {
+    border-right-style: solid;
+    padding-inline-end: 1rem;
+  }
+  &__nav_schedule {
+    display: flex;
+    gap: 1rem;
   }
 }
 
+.deco-patern {
+  display: flex;
+  justify-content: space-between;
+  img {
+    margin-block-end: -1rem;
+    height: 2rem;
+  }
+}
+
+.icon-loop {
+  padding-inline-start: 1rem;
+  color: orange;
+}
 

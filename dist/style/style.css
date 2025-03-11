@@ -25,6 +25,98 @@
   font-variation-settings: "wgth" 400, "wgth" 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "codeconf";
+  src: url("webfonts/codeconf/codeconf.ttf") format("truetype"), url("webfonts/codeconf/codeconf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class*=icon]::before, [class$=" icon"]::before {
+  font-family: "codeconf" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-burger:before {
+  content: "\e93e";
+}
+
+.icon-schedule:before {
+  content: "\e93f";
+}
+
+.icon-loop:before {
+  content: "\e940";
+}
+
+.icon-contact:before {
+  content: "\e941";
+}
+
+.icon-event:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+}
+
+.icon-card:before {
+  content: "\e944";
+}
+
+.icon-paypal:before {
+  content: "\e945";
+}
+
+.icon-tw:before {
+  content: "\e946";
+}
+
+.icon-slack:before {
+  content: "\e947";
+}
+
+.icon-heart_full:before {
+  content: "\e948";
+}
+
+.icon-heart_line:before {
+  content: "\e949";
+}
+
+.icon-square_full:before {
+  content: "\e94a";
+}
+
+.icon-square_line:before {
+  content: "\e94b";
+}
+
+.icon-spade_full:before {
+  content: "\e94c";
+}
+
+.icon-spade_line:before {
+  content: "\e94d";
+}
+
+.icon-clover_full:before {
+  content: "\e94e";
+}
+
+.icon-clover_line:before {
+  content: "\e94f";
+}
+
 *,
 *::before,
 *::after {
@@ -49,13 +141,18 @@ a {
 
 body {
   font-family: "maven";
+  margin: 0;
+}
+
+.main-header {
+  font-weight: 450;
+  color: #1d1d1d;
 }
 
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px dashed grey;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,31 +160,119 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.main-header__logo {
-  border: 1px dashed grey;
-}
 .main-header__logo img {
   width: 10rem;
 }
+.main-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
 .main-header__nav_list {
-  border: 1px dashed grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 2rem;
   margin: 0;
+}
+.main-header__nav_list :last-child {
+  border-right-style: none;
+}
+.main-header__nav_item {
+  border-right-style: solid;
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+.main-header__nav_schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.deco-patern {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.deco-patern img {
+  -webkit-margin-after: -1rem;
+          margin-block-end: -1rem;
+  height: 2rem;
+}
+
+.icon-loop {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+  color: orange;
+}
+
+.teaser {
+  height: 10rem;
+  margin: 0;
+  width: 100%;
+  background-color: #7b3aff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.teaser__image {
+  margin-top: -5rem;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.teaser__info {
+  width: 30rem;
+}
+.teaser__title {
+  font-family: "museo";
+  font-size: 2.5rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+}
+.teaser__texte {
+  font-family: "maven";
+  color: #c0c0c0;
+  font-size: 1.2rem;
+  margin-top: 0;
 }
 
 .speakers_all {
   border: 1px dashed grey;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
 }
 .speakers_all__title {
   display: none;
+}
+@media (min-width: 768px) {
+  .speakers_all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .speakers_all {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .speaker {
@@ -123,8 +308,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   border: 1px dashed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer-info__media {
   padding: 1rem;
   border: 1px solid;
+}
+.footer-info__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-info__call {
+  border: 1px dashed;
+  padding: 1rem;
+}
+.footer-info__copyright {
+  border: 1px dashed;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -20,9 +20,21 @@ display: flex;
 .footer-info {
   display: flex;
   border: 1px dashed;
+  justify-content: space-around;
   &__media {
     padding: 1rem;
     border: 1px solid;
     
+  }
+  &__social {
+    display: flex;
+  }
+  &__call {
+    border: 1px dashed;
+    padding: 1rem;
+  }
+  &__copyright {
+    border: 1px dashed;
+    padding: 1rem;
   }
 }
