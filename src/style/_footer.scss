@@ -1,0 +1,13 @@
+.footer__location {
+display: flex;
+}
+
+.footer__sponsors {
+  background-color: black;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+}

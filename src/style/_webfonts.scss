@@ -1,0 +1,33 @@
+
+/* museo */
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo300.woff2") format("woff2"),
+       url("webfonts/museo/museo300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo500.woff2") format("woff2"),
+       url("webfonts/museo/museo500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo700.woff2") format("woff2"),
+       url("webfonts/museo/museo700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* maven */
+@font-face {
+  font-family: "maven";
+  src: url("webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("woff2"),
+       url("webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("woff");
+  font-weight: 400 900;
+  font-variation-settings: "wgth"400, "wgth"900;
+  font-style: normal;
+}

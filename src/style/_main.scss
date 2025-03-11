@@ -1,0 +1,8 @@
+.speakers {
+  border: 1px dashed grey;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  &__speakers {
+    padding: 2rem;
+  }
+}
