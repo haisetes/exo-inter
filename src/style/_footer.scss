@@ -1,13 +1,28 @@
-.footer__location {
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 2rem;
+
+}
+.footer-location {
 display: flex;
 }
 
-.footer__sponsors {
-  background-color: black;
+.footer-sponsors {
   &__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+  }
+}
+
+.footer-info {
+  display: flex;
+  border: 1px dashed;
+  &__media {
+    padding: 1rem;
+    border: 1px solid;
+    
   }
 }

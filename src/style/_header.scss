@@ -3,6 +3,13 @@
   border: 1px dashed grey;
   align-items: center;
   justify-content: space-between;
+  &__logo {
+
+    border: 1px dashed grey;
+    img {
+      width: 10rem;
+    }
+  }
   &__nav_list {
     border: 1px dashed grey;
     display: flex;
@@ -12,8 +19,4 @@
   }
 }
 
-.main-hearder__logo {
-  img {
-    width: 10rem;
-  }
-}
+
