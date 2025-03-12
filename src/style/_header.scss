@@ -3,35 +3,50 @@
   font-weight: 450;
   color: #1d1d1d;
 }
-
+//modif 
 .main-header {
-  padding: 1rem;
-
-  display: flex;
-  align-items: center;
-    justify-content: space-between;
-  border: 1px dashed;
-  &__nav_schedule {
-
+  @media (min-width: 100px) {
+    padding-inline: 1rem;
+    padding-block-end: -2rem;
     display: flex;
-    gap: 1rem;
-  }
-  .icon-loop,
-  &__nav_list,
-  &__nav_schedule_title {
-    display: none;
-  }
-  &__logo {
-    img {
-  width: 15rem;
-}
+    align-items: center;
+      justify-content: space-between;
+    border: 1px dashed;
 
+    &__nav_schedule {
+      display: flex;
+      gap: 1rem;
+    }
+    //mobile-no-see
+    &__nav_schedule_loop,
+    &__nav_list,
+    &__nav_schedule_title {
+      display: none;
+    }
+
+    &__logo {
+      img {
+    width: 15rem;
+  }
+  }
+
+  &__nav_schedule {
+    font-size: 1.5rem;
+  }
 }
   @media (min-width: 768px) {
+    &__nav_schedule {
+      font-size: 1rem;
+    }
     display: flex;
-  
     align-items: center;
     justify-content: space-between;
+    //format-large-see
+    &__nav_schedule_loop,
+    &__nav_list,
+    &__nav_schedule_title {
+      display: contents;
+    }
     &__logo {
           img {
         width: 10rem;

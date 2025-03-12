@@ -144,35 +144,46 @@ body {
   margin: 0;
 }
 
+.disable {
+  display: none;
+}
+
 .main-header {
   font-weight: 450;
   color: #1d1d1d;
 }
 
-.main-header {
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1px dashed;
-}
-.main-header__nav_schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-.main-header .icon-loop, .main-header__nav_list, .main-header__nav_schedule_title {
-  display: none;
-}
-.main-header__logo img {
-  width: 15rem;
+@media (min-width: 100px) {
+  .main-header {
+    padding-inline: 1rem;
+    -webkit-padding-after: -2rem;
+            padding-block-end: -2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px dashed;
+  }
+  .main-header__nav_schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+  .main-header__nav_schedule_loop, .main-header__nav_list, .main-header__nav_schedule_title {
+    display: none;
+  }
+  .main-header__logo img {
+    width: 15rem;
+  }
+  .main-header__nav_schedule {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .main-header {
@@ -185,6 +196,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .main-header__nav_schedule {
+    font-size: 1rem;
+  }
+  .main-header__nav_schedule_loop, .main-header__nav_list, .main-header__nav_schedule_title {
+    display: contents;
   }
   .main-header__logo img {
     width: 10rem;
@@ -245,42 +262,82 @@ body {
   color: orange;
 }
 
-.teaser {
-  height: 10rem;
-  margin: 0;
-  width: 100%;
-  background-color: #7b3aff;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
+@media (min-width: 100px) {
+  .teaser {
+    height: 10rem;
+    margin: 0;
+    width: 100%;
+    background-color: #7b3aff;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .teaser__image {
+    margin-top: -5rem;
+    -ms-flex-item-align: end;
+        align-self: end;
+  }
+  .teaser__info {
+    width: 30rem;
+  }
+  .teaser__title {
+    z-index: 1;
+    font-family: "museo";
+    font-size: 2.5rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
+  }
+  .teaser__texte {
+    display: none;
+  }
 }
-.teaser__image {
-  margin-top: -5rem;
-  -ms-flex-item-align: end;
-      align-self: end;
-}
-.teaser__info {
-  width: 30rem;
-}
-.teaser__title {
-  font-family: "museo";
-  font-size: 2.5rem;
-  -webkit-margin-after: 0.5rem;
-          margin-block-end: 0.5rem;
-}
-.teaser__texte {
-  font-family: "maven";
-  color: #c0c0c0;
-  font-size: 1.2rem;
-  margin-top: 0;
+@media (min-width: 700px) {
+  .teaser {
+    height: 10rem;
+    margin: 0;
+    width: 100%;
+    background-color: #7b3aff;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .teaser__image {
+    margin-top: -5rem;
+    -ms-flex-item-align: end;
+        align-self: end;
+  }
+  .teaser__info {
+    width: 30rem;
+  }
+  .teaser__title {
+    font-family: "museo";
+    font-size: 2.5rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
+  }
+  .teaser__texte {
+    display: contents;
+    font-family: "maven";
+    color: #c0c0c0;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
 }
 
 .speakers_all {
@@ -302,8 +359,25 @@ body {
   }
 }
 
-.speaker {
-  padding: 1rem;
+@media (min-width: 100px) {
+  .speaker {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .speaker__image {
+    border: 1px solid;
+    grid-row: 2/-2;
+  }
+}
+.speaker img {
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .speaker img {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {

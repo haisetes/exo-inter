@@ -14,5 +14,24 @@
 }
 
 .speaker {
+  @media (min-width: 100px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
+  &__image {
+    border: 1px solid;
+    grid-row: 2 / -2;
+  }
+  }
+
+  img {
+    border-radius: 50%;
+    
+  }
+  @media (min-width: 768px) {
+    img {
+      border-radius: 0;
+      grid-template-columns: 1fr;
+    }
+  }
 }
