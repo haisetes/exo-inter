@@ -362,6 +362,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
   }
+  .speaker footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    grid-column: 1/3;
+  }
   .speaker__image {
     border: 1px solid;
     grid-column: 2/3;
@@ -372,6 +381,16 @@ body {
   border-radius: 50%;
 }
 @media (min-width: 768px) {
+  .speaker picture::after {
+    content: "";
+    width: 5rem;
+    height: 1rem;
+    position: absolute;
+    inset-inline: auto 0;
+    inset-block: auto -0.5rem;
+    background: url("image/");
+    background-size: 2rem 1rem;
+  }
   .speaker img {
     border-radius: 0;
     grid-template-columns: repeat(2, 1fr);

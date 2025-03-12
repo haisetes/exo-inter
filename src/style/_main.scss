@@ -13,6 +13,11 @@
 
 .speaker {
   @media (min-width: 100px) {
+    footer {
+      display: flex;
+      justify-content: space-between;
+      grid-column: 1 / 3;
+    }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
@@ -28,6 +33,18 @@
     
   }
   @media (min-width: 768px) {
+    picture {
+      &::after {
+        content: "";
+        width: 5rem;
+        height: 1rem;
+        position: absolute;
+        inset-inline: auto 0;
+        inset-block: auto -.5rem;
+        background: url("image/");
+        background-size: 2rem 1rem;
+      }
+    }
     img {
       border-radius: 0;
       grid-template-columns: repeat(2, 1fr);
