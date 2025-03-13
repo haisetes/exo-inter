@@ -1,9 +1,8 @@
 .speakers_all {
 
-  border: 1px dashed grey;
   display: grid;
   grid-template-columns: 1fr;
-  @media (min-width: 768px) {
+  @media (min-width: 400px) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: 1024px) {
@@ -12,40 +11,42 @@
 }
 
 .speaker {
-  @media (min-width: 110px) {
-    footer {
-      display: flex;
-      justify-content: space-between;
-      grid-column: 1 / 3;
+  @media (min-width: 100px) {
+    &__profile {
+      * {
+        margin: 0.5rem;
+      }
+    }
+    &__info-card {
+      display: none;
     }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
-  &__image {
-    border: 1px solid;
-    grid-column: 2 / 3;
-    grid-row: 1 / 8;
-  }
+    padding: 1rem;
+    &__image {
+      justify-self: end;
+      align-self: center;
+      object-fit: cover; 
+      width: 5rem;
+      border-radius: 50%;
+      border: 1px solid;
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+    }
+  //footer-card
+  footer {
+    display: none;
+    }
+
   }
 
-  img {
-    border-radius: 50%;
-    
-  }
-  @media (min-width: 768px) {
-    picture {
-      &::after {
-        content: "";
-        width: 5rem;
-        height: 1rem;
-        position: absolute;
-        inset-inline: auto 0;
-        inset-block: auto -.5rem;
-        background: url("image/");
-        background-size: 2rem 1rem;
-      }
+  @media (min-width: 400px) {
+    &__info-card {
+      display: contents;
     }
+
     img {
+      width: 100%;
       border-radius: 0;
       grid-template-columns: repeat(2, 1fr);
       grid-column: 1 / 3;

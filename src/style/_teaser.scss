@@ -6,8 +6,6 @@
     background-color: #7b3aff;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     &__image {
       margin-top: -5rem;
@@ -17,11 +15,11 @@
       width: 30rem;
     }
     &__title {
-      z-index: 1;
       font-family: "museo";
       font-size: 2.5rem;
       margin-block-end: 0.5rem;
     }
+    // disable-mobile
     &__texte {
   display: none;
   }
