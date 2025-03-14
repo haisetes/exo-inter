@@ -1,484 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exo-intégré</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="script/script.js"></script>
-    
-  </head>
-  <body>
 
-        <!------------------------------ header ------------------------------>
-    <header>
-      <div class="main-header">
-        <h1 class="main-header__logo">
-          <a href="index.html" class="main-header__link"
-            ><img
-              src="../dist/image/logos_assets_codeconf/logo2023.svg"
-              alt="CodeConf"
-          /></a>
-        </h1>
-        <!-- main nav -->
-        <input type="checkbox" aria-hidden="true" class="trigger icon-burger">
-        <nav class="main-header__nav">
-          <ul class="main-header__nav_list">
-            <li class="main-header__nav_item"><a href="#">Event</a></li>
-            <li class="main-header__nav_item"><a href="#">Speakers</a></li>
-            <li class="main-header__nav_item"><a href="#">Team</a></li>
-            <li class="main-header__nav_item"><a href="#">Contact</a></li>
-          </ul>
-          <div class="main-header__nav_schedule">
-            <p><a class="icon-schedule" href="#"></a></p>
-            <p><a class="main-header__nav_schedule_title" href="#">Schedule</a></p>
-            <div class="main-header__nav_schedule_loop">
-              <p><a class="icon-loop" href="#"></a></p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>exo-intégré</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="script/script.js"></script>
+
+</head>
+
+<body>
+
+  <!------------------------------ header ------------------------------>
+  <header>
+    <div class="main-header">
+      <h1 class="main-header__logo">
+        <a href="index.html" class="main-header__link"><img src="../dist/image/logos_assets_codeconf/logo2023.svg"
+            alt="CodeConf" /></a>
+      </h1>
+      <!-- main nav -->
+      <input type="checkbox" aria-hidden="true" class="trigger icon-burger">
+      <nav class="main-header__nav">
+        <ul class="main-header__nav_list">
+          <li class="main-header__nav_item"><a href="#">Event</a></li>
+          <li class="main-header__nav_item"><a href="#">Speakers</a></li>
+          <li class="main-header__nav_item"><a href="#">Team</a></li>
+          <li class="main-header__nav_item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="main-header__nav_schedule">
+          <p><a class="icon-schedule" href="#"></a></p>
+          <p><a class="main-header__nav_schedule_title" href="#">Schedule</a></p>
+          <div class="main-header__nav_schedule_loop">
+            <p><a class="icon-loop" href="#"></a></p>
           </div>
-        </nav>
-      </div>
-      </div>
-    </header>
-    <!------------------------------ main ------------------------------>
-    <main>
-      <!-------------------- teaser -------------->
-      <section class="teaser">
-        <div class="teaser__image">
-          <img src="../dist/image/page-picture/presents.png" alt="" />
         </div>
-        <div class="teaser__info">
-          <h2 class="teaser__title">Speaker Edition 2025</h2>
-          <p class="teaser__texte">
-            Discover the speakers and the topics or suggest your own topic for
-            our next event
+      </nav>
+    </div>
+    </div>
+  </header>
+  <!------------------------------ main ------------------------------>
+  <main>
+    <!-------------------- teaser -------------->
+    <section class="teaser">
+      <div class="teaser__image">
+        <img src="../dist/image/page-picture/presents.png" alt="" />
+      </div>
+      <div class="teaser__info">
+        <h2 class="teaser__title">Speaker Edition 2025</h2>
+        <p class="teaser__texte">
+          Discover the speakers and the topics or suggest your own topic for
+          our next event
+        </p>
+      </div>
+    </section>
+    <!-- file d'arianne -->
+    <nav class="main__nav">
+      <ul class="main__nav_list">
+        <li class="main__nav_item"><a href="#">home</a></li>
+        <li class="main__nav_item"><a href="#"></a>Speaker</li>
+      </ul>
+    </nav>
+    <!-- tab speakers -->
+    <div class="speakers_all">
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/chris@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Chris Coyier</h3>
+          <h4 class="speaker__location">Milwaukee, WI</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">The All-Powerful Front-End Developer</h5>
+          <p class="speaker__description">Without servers, we'd have no way to share our creations with the world</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
+          <p class="speaker__room">R1</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/sara@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Sara Soueidan</h3>
+          <h4 class="speaker__location">Lebanon</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Going Offline</h5>
+          <p class="speaker__description">You can re-visit my Web site even when you’re not connected to the Internet</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="10:15"></time>10:15 am</p>
+          <p class="speaker__room">R1</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/eric@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Eric Meyer</h3>
+          <h4 class="speaker__location">Cleveland, OH</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Faux Grid Tracks</h5>
+          <p class="speaker__description">Is it possible to style the rows and columns of a [CSS] grid—the grid itself?</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
+          <p class="speaker__room">R1</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/lea@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Lea Verou</h3>
+          <h4 class="speaker__location">Cambridge, MA</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Mavo</h5>
+          <p class="speaker__description">New approachable way to create Web applications</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/shirley@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Shirley Wu</h3>
+          <h4 class="speaker__location">San Francisco, CA</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">655 Frustrations Doing Data Visualization</h5>
+          <p class="speaker__description">Visualization teams spend more time visualizing than those on embedded teams
           </p>
         </div>
-      </section>
-      <!-- file d'arianne -->
-      <nav class="main__nav">
-        <ul class="main__nav_list">
-          <li class="main__nav_item"><a href="#">home</a></li>
-          <li class="main__nav_item"><a href="#"></a>Speaker</li>
-        </ul>
-      </nav>
-      <!-- tab speakers -->
-      <div class="speakers_all">
-         <!-- ------------------------------speaker------------------------------- -->
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/chris@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Chris Coyier</h3>
-            <h4 class="speaker__location">Milwaukee, WI</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">The All-Powerful Front-End Developer</h5>
-            <p class="speaker__description">
-              Without servers, we'd have no way to share our creations with the
-              world
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-          <!-- ------------------------------speaker------------------------------- -->
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/sara@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Sara Soueidan</h3>
-            <h4 class="speaker__location">Lebanon</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Going Offline</h5>
-            <p class="speaker__description">
-              You can re-visit my Web site even when you’re not connected to the
-              Internet
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="10:15"></time>10:15 am</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
+        <footer>
+          <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
 
-        <div class="speaker">
 
-            <img
-              class="speaker__image"
-              src="../dist/image/orators/eric@3x.jpg"
-              alt=""
-            />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Eric Meyer</h3>
-            <h4 class="speaker__location">Cleveland, OH</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Faux Grid Tracks</h5>
-            <p class="speaker__description">
-              Is it possible to style the rows and columns of a [CSS] grid—the
-              grid itself?
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/lea@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Lea Verou</h3>
-            <h4 class="speaker__location">Cambridge, MA</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Mavo</h5>
-            <p class="speaker__description">
-              New approachable way to create Web applications
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="04:00"></time>04:00 pm</p>
-            <p class="speaker__room">R2</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/shirley@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Shirley Wu</h3>
-            <h4 class="speaker__location">San Francisco, CA</h4>
-          </h5>
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/luke@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Luke Wroblewski</h3>
+          <h4 class="speaker__location">San Francisco, CA</h4>
         </div>
         <div class="speaker__info-card">
-            <h5 class="speaker__title"> 655 Frustrations Doing Data Visualization
-            <p class="speaker__description">
-              Visualization teams spend more time visualizing than those on
-              embedded teams
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="09:30"></time>09:30 am</p>
-            <p class="speaker__room">R2</p>
-            <button class="speaker__btn">About</button>
-          </footer>
+          <h5 class="speaker__title">The Way of the Web</h5>
+          <p class="speaker__description">Science fiction is not about predicting the future, but about what we need to
+            have a future</p>
         </div>
-                 <!-- ------------------------------speaker------------------------------- -->
+        <footer>
+          <p class="speaker__hour"><time datetime="11:30"></time>11:30am</p>
+          <p class="speaker__room">R1</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
 
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/luke@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Luke Wroblewski</h3>
-            <h4 class="speaker__location">San Francisco, CA</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">The Way of the Web</h5>
-            <p class="speaker__description">
-              Science fiction is not about predicting the future, but about what
-              we need to have a future
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="11:30"></time>11:30am</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/nico@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Nicolas Gallagher</h3>
-            <h4 class="speaker__location">San Francisco, CA</h4>
-          </h5>
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/nico@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Nicolas Gallagher</h3>
+          <h4 class="speaker__location">San Francisco, CA</h4>
         </div>
         <div class="speaker__info-card">
-            <h5 class="speaker__title">Making SVG icon libraries for React apps
-            <p class="speaker__description">
-              Using SVG is currently the best way to create icon libraries for
-              apps
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="11:30"></time>02:00pm</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
+          <h5 class="speaker__title">Making SVG icon libraries for React apps</h5>
+          <p class="speaker__description">Using SVG is currently the best way to create icon libraries for apps</p>
         </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-</h1>
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/rachel@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Rachel Andrew</h3>
-            <h4 class="speaker__location">Bristol, UK</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Making Things Better</h5>
-            <p class="speaker__description">
-              Redefining the Technical Possibilities of CSS
-            </p>
-          </div>
-          <footer>
+        <footer>
+          <p class="speaker__hour"><time datetime="02:00"></time>02:00 pm</p>
+          <p class="speaker__room">R1</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/rachel@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Rachel Andrew</h3>
+          <h4 class="speaker__location">Bristol, UK</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Making Things Better</h5>
+          <p class="speaker__description">Redefining the Technical Possibilities of CSS</p>
+        </div>
+        <footer>
           <p class="speaker__hour"><time datetime="03:00"></time>03:00 pm</p>
           <p class="speaker__room">R1</p>
           <button class="speaker__btn">About</button>
         </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-</h1>
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/stephen@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Stephen Hay</h3>
-            <h4 class="speaker__location">Leeuwarden, NL</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Zero interface thinking</h5>
-            <p class="speaker__description">
-              Everything we introduce has the potential to ruin everything. Ask:
-              Is this absolutely necessary?
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="05:00"></time>05:00 pm</p>
-            <p class="speaker__room">R1</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-</h1>
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/paul@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Paul Irish</h3>
-            <h4 class="speaker__location">Palo Alto, CA</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Developer Tooling, lighthouse</h5>
-            <p class="speaker__description">
-              Auditing, performance metrics, and best practices for Progressive
-              Web Apps
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="10:30"></time>10:30 am</p>
-            <p class="speaker__room">R2</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-</h1>
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/nicole@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Nicole Sullivan</h3>
-            <h4 class="speaker__location">San Francisco, CA</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">OOCSS code standards</h5>
-            <p class="speaker__description">
-              Code conventions are important for the long-term maintainability of
-              code
-            </p>
-          </div>
-          <footer>
-            <p class="speaker__hour"><time datetime="11:30"></time>11:30 am</p>
-            <p class="speaker__room">R2</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
-                 <!-- ------------------------------speaker------------------------------- -->
-</h1>
-        <div class="speaker">
-          <img
-            class="speaker__image"
-            src="../dist/image/orators/brad@3x.jpg"
-            alt=""
-          />
-          <div class="speaker__profile">
-            <h3 class="speaker__name">Brad Frost</h3>
-            <h4 class="speaker__location">Pittsburgh, PA.</h4>
-          </div>
-          <div class="speaker__info-card">
-            <h5 class="speaker__title">Atomic Design</h5>
-            <p class="speaker__description">
-              We can construct design systems in a more methodical way
-            </p>
-          </div>
-
-          <footer>
-            <p class="speaker__hour"><time datetime="02:00"></time>02:00 pm</p>
-            <p class="speaker__room">R2</p>
-            <button class="speaker__btn">About</button>
-          </footer>
-        </div>
       </div>
-          <!------------------------------ form ------------------------------>
 
-      <section>
-        <form>
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/stephen@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Stephen Hay</h3>
+          <h4 class="speaker__location">Leeuwarden, NL</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Zero interface thinking</h5>
+          <p class="speaker__description">Everything we introduce has the potential to ruin everything. Ask: Is this
+            absolutely necessary?</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="05:00"></time>05:00 pm</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/paul@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Paul Irish</h3>
+          <h4 class="speaker__location">Palo Alto, CA</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Developer Tooling, lighthouse</h5>
+          <p class="speaker__description">Auditing, performance metrics, and best practices for Progressive Web Apps</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="10:30"></time>10:30 am</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/nicole@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Nicole Sullivan</h3>
+          <h4 class="speaker__location">San Francisco, CA</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">OOCSS code standards</h5>
+          <p class="speaker__description">Code conventions are important for the long-term maintainability of code</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="11:30"></time>11:30 am</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+
+      <!-- ------------------------------speaker------------------------------- -->
+      <div class="speaker">
+        <picture>
+          <img class="speaker__image" src="../dist/image/orators/brad@3x.jpg" alt="" />
+        </picture>
+        <div class="speaker__profile">
+          <h3 class="speaker__name">Brad Frost</h3>
+          <h4 class="speaker__location">Pittsburgh, PA.</h4>
+        </div>
+        <div class="speaker__info-card">
+          <h5 class="speaker__title">Atomic Design</h5>
+          <p class="speaker__description">We can construct design systems in a more methodical way</p>
+        </div>
+        <footer>
+          <p class="speaker__hour"><time datetime="02:00"></time>02:00 pm</p>
+          <p class="speaker__room">R2</p>
+          <button class="speaker__btn">About</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <!------------------------------ form ------------------------------>
+
+    <section class="form_all">
+      <div class="form_all__info">
+        <h1 class="form_all__title">Become speaker</h1>
+        <h2 class="form_all__question">Do you have a topic that you like? </h2>
+        <p class="form_all__texte">Submit it for the next event by filling out the form below. Do not forget to specify the subject and the
+          related keywords</p>
+      </div>
+      <form class="form_all__form">
+        <div class="form_all__form_el">
           <label for="name">Name*</label>
           <input type="text" id="name" name="name" required />
+        </div>
 
+        <div class="form_all__form_el">
           <label for="mail">Mail*</label>
           <input type="email" id="mail" name="mail" required />
+        </div>
 
+        <div class="form_all__form_el">
           <label for="subject">Subject*</label>
           <input type="text" id="subject" name="subject" required />
+        </div>
 
+        <div class="form_all__form_el">
           <label for="keywords">Keywords</label>
           <input type="text" id="keywords" name="keywords" />
+        </div>
 
+        <div class="form_all__form__detail">
           <label for="details">Short detail*</label>
           <textarea id="details" name="details" required></textarea>
+        </div>
 
-          <button type="submit">Send Your Subject</button>
+        <button type="submit">Send Your Subject</button>
+        <p>or just participate to the present event</p>
+      </form>
+    </section>
+    <section>
+      <button type="submit">get ticket</button>
+    </section>
+  </main>
+  <!------------------------------ footer ------------------------------>
 
-          <p>or just participate to the present event</p>
-        </form>
+  <footer class="footer">
+    <div class="footer__container">
+      <!-- Location Section -->
+      <section class="footer-location">
+        <div class="footer-location__text">
+          <h2>The Las Vegas Convention Center</h2>
+          <h3>3150 Paradise Rd, Las Vegas, NV 89109</h3>
+          <p>
+            The Las Vegas Convention Center (LVCC), located adjacent to the
+            Las Vegas Strip, encompasses approximately 3.2 million square feet
+            with exhibit space of 2 million square feet and meeting space of
+            nearly 250,000 square feet.
+          </p>
+        </div>
+        <figure class="footer-location__image">
+          <img src="../dist/image/page-picture/lasvegas_conventioncenter.png" alt="Las Vegas Convention Center" />
+        </figure>
       </section>
-      <section>
-        <button type="submit">get ticket</button>
+
+      <!-- Sponsors Section -->
+
+      <nav class="footer-sponsors">
+        <ul class="footer-sponsors__list">
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/cisco.svg" alt="Cisco Logo" />
+          </li>
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/amazon_s3.svg" alt="Amazon S3 Logo" />
+          </li>
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/nick.svg" alt="Nick Logo" />
+          </li>
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/meetup.svg" alt="Meetup Logo" />
+          </li>
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/stripe.svg" alt="Stripe Logo" />
+          </li>
+          <li>
+            <img src="../dist/image/logos_assets_codeconf/mailchimp.svg" alt="Mailchimp Logo" />
+          </li>
+        </ul>
+      </nav>
+      <!-- infos Section -->
+      <section class="footer-info">
+        <div class="footer-info__media">
+          <h2 class="footer-info__title">Follow us</h2>
+          <div class="footer-info__social">
+            <p>twitter: @codeconf2023</p>
+            <p>slack channel: #codeconf2023</p>
+          </div>
+        </div>
+        <div class="footer-info__call">
+          <p>Helpdesk Call-center</p>
+          <p><a href="#">+1 702-892-0711</a></p>
+          <p>(speaker's support)</p>
+        </div>
+        <div class="footer-info__copyright">
+          <p>organised by</p>
+          <p>WebeesMeetups.com</p>
+          <p>copyright</p>
+        </div>
       </section>
-    </main>
-        <!------------------------------ main ------------------------------>
+    </div>
+  </footer>
+</body>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <!-- Location Section -->
-        <section class="footer-location">
-          <div class="footer-location__text">
-            <h2>The Las Vegas Convention Center</h2>
-            <h3>3150 Paradise Rd, Las Vegas, NV 89109</h3>
-            <p>
-              The Las Vegas Convention Center (LVCC), located adjacent to the
-              Las Vegas Strip, encompasses approximately 3.2 million square feet
-              with exhibit space of 2 million square feet and meeting space of
-              nearly 250,000 square feet.
-            </p>
-          </div>
-          <figure class="footer-location__image">
-            <img
-              src="../dist/image/page-picture/lasvegas_conventioncenter.png"
-              alt="Las Vegas Convention Center"
-            />
-          </figure>
-        </section>
-
-        <!-- Sponsors Section -->
-
-        <nav class="footer-sponsors">
-          <ul class="footer-sponsors__list">
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/cisco.svg"
-                alt="Cisco Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/amazon_s3.svg"
-                alt="Amazon S3 Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/nick.svg"
-                alt="Nick Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/meetup.svg"
-                alt="Meetup Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/stripe.svg"
-                alt="Stripe Logo"
-              />
-            </li>
-            <li>
-              <img
-                src="../dist/image/logos_assets_codeconf/mailchimp.svg"
-                alt="Mailchimp Logo"
-              />
-            </li>
-          </ul>
-        </nav>
-        <!-- infos Section -->
-        <section class="footer-info">
-          <div class="footer-info__media">
-            <h2 class="footer-info__title">Follow us</h2>
-            <div class="footer-info__social">
-              <p>twitter: @codeconf2023</p>
-              <p>slack channel: #codeconf2023</p>
-            </div>
-          </div>
-          <div class="footer-info__call">
-            <p>Helpdesk Call-center</p>
-            <p><a href="#">+1 702-892-0711</a></p>
-            <p>(speaker's support)</p>
-          </div>
-          <div class="footer-info__copyright">
-            <p>organised by</p>
-            <p>WebeesMeetups.com</p>
-            <p>copyright</p>
-          </div>
-        </section>
-      </div>
-    </footer>
-  </body>
 </html>
