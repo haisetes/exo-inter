@@ -6,10 +6,21 @@
     background-color: #7b3aff;
     color: white;
     display: flex;
+    align-items: center;
     gap: 2rem;
     &__image {
+      position: relative;
       margin-top: -5rem;
       align-self: end;
+      width: 100%;
+      img {
+        width: 100%;
+        display: block;
+
+        align-self: center;
+
+        
+      }
     }
     &__info {
       width: 30rem;
@@ -17,7 +28,12 @@
     &__title {
       font-family: "museo";
       font-size: 2.5rem;
-      margin-block-end: 0.5rem;
+      position: absolute;
+      align-self: center;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+
     }
     // disable-mobile
     &__texte {
@@ -42,9 +58,11 @@
       width: 30rem;
     }
     &__title {
+      position: static;
       font-family: "museo";
       font-size: 2.5rem;
       margin-block-end: 0.5rem;
+
     }
     &__texte {
       display: contents;
