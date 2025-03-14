@@ -377,8 +377,16 @@ body {
     font-family: "museo";
     font-weight: 400;
   }
+  .speaker__location {
+    color: #a5a1b2;
+    font-weight: 300;
+    width: 10rem;
+  }
   .speaker__profile * {
     margin: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .speaker__info-card {
     display: none;
@@ -390,7 +398,6 @@ body {
        object-fit: cover;
     width: 5rem;
     border-radius: 50%;
-    border: 1px solid;
     grid-column: 2/-1;
     grid-row: 1/2;
   }
@@ -400,12 +407,12 @@ body {
 }
 @media (min-width: 400px) {
   .speaker__info-card {
-    display: grid;
-    grid-row: 4/4;
-    grid-column: 1/3;
+    display: none;
   }
   .speaker img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-column: 1/3;
